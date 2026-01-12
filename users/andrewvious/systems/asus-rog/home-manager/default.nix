@@ -11,16 +11,16 @@
   home.packages = with pkgs; [
     nvtopPackages.full
     kdePackages.dolphin
+    kdePackages.kio
     kdePackages.kio-extras
     cliphist
-    melonDS
     grim
     rofi
     mako
     swww-upstream
     zathura
-    image-roll
     pavucontrol
+    qimgv
   ];
 
   braveTorrent.enable = true;
@@ -37,7 +37,7 @@
   xdg.mimeApps.defaultApplications = {
     "text/plain" = [ "helix.desktop" ];
     "application/pdf" = [ "zathura.desktop" ];
-    "image/*" = [ "image-roll.desktop" ];
+    "image/*" = [ "qimgv.desktop" ];
     "video/png" = [ "vlc.desktop" ];
     "video/jpg" = [ "vlc.desktop" ];
     "video/*" = [ "vlc.desktop" ];

@@ -230,6 +230,7 @@
           "SUPER, SUPER_L, exec, pkill rofi || rofi -show drun -show-icons" # app finder
           "SUPER, BACKSPACE, exec, pkill rofi || ${powerMenu}/bin/powermenu.sh"
           "SUPER, C, exec, pkill rofi || ${clipboardMenu}/bin/clipboardmenu.sh"
+          "SUPER, U, exec, wpctl set-mute 101 1" # release-to-mute for Blue Yeti
         ];
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
@@ -241,6 +242,10 @@
           "$mainMod, T, movetoworkspacesilent, special:minimized" # send to tray
           "$mainMod SHIFT, T, togglespecialworkspace, minimized" # show tray
           "$mainMod SHIFT, C, exec, cliphist wipe" # clear clipboard manager
+
+          # Push-to-Talk + Mute Toggle for Blue Yeti
+          "$mainMod, U, exec, wpctl set-mute 101 0"
+          "$mainMod, SPACE, exec, wpctl set-mute 101 toggle"
 
           # Move focus with mainMod + arrow keys
           "$mainMod, L, movefocus, r"
