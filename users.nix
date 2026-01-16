@@ -71,6 +71,7 @@
       hostl = [
         "asus-rog"
         "dev-one"
+        "gamescope"
       ];
     }
   ];
