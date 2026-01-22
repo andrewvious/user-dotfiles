@@ -6,6 +6,7 @@
     ../../../home-manager/hyprland.nix
     ../../../home-manager/waybar.nix
     ../../../home-manager/brave-torrent.nix
+    ../../../home-manager/hypridle.nix
   ];
 
   home.packages = with pkgs; [
